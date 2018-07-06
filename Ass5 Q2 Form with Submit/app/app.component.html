@@ -1,0 +1,81 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Admission Form
+  </h1>
+  </div>
+<div style="text-align:center">
+  <form>
+    <table>
+      <tr>
+        <div class="form-group">
+          <td>
+            <label>Student Name :
+            </label>
+          </td>
+          <td>
+            <input id="name" #name type="text" class="form-control">
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div class="form-group">
+          <td>
+            <label>Address :</label>
+          </td>
+          <td>
+            <textarea id="address" #address cols="30" rows="8" class="form-control"></textarea>
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div class="form-group">
+          <td>
+            <label>Gender :</label>
+          </td>
+          <td>
+            <input id="gender" #gender type="text" class="form-control">
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div class="form-group">
+          <td>
+            <label>Mobile No :</label>
+          </td>
+          <td>
+            <input id="mob no" #mobno type="text" class="form-control">
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div class="form-group">
+          <td>
+            <label>Email Id :</label>
+          </td>
+          <td>
+            <input id="emailId" #emailid type="text" class="form-control">
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div class="form-group">
+          <td>
+            <label>Batch Name :</label>
+          </td>
+          <td>
+            <input id="batchname" #batchname type="text" class="form-control">
+          </td>
+        </div>
+      </tr>
+
+    </table>
+
+    <button (click)="AcceptData(name.value,address.value,gender.value,mobno.value,emailid.value,batchname.value)">Submit data</button>
+  </form>
+</div>

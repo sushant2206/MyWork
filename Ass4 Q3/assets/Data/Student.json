@@ -1,0 +1,6 @@
+[
+    {"Name":"Salman Khan", "RollNo":1, "Address":"Pune", "Hobby":"Cricket"},
+    {"Name":"Shahrukh Khan", "RollNo":2, "Address":"Mumbai","Hobby":"Football" },
+    {"Name":"Ranvir Singh", "RollNo":3, "Address":"Nashik", "Hobby":"Dance"},
+    {"Name":"Sanju", "RollNo":4,"Address":"Pune", "Hobby":"Fighting"}
+]

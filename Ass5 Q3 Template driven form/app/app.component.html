@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Admission Form
+  </h1>
+  </div>
+<div style="text-align:center">
+  <form>
+    <table>
+      <tr>
+        <div class="form-group">
+          <td>
+            <label for="username">Username :
+            </label>
+          </td>
+          <td>
+            <input required 
+                    ngModel  
+                    name="username" 
+                    id="name" 
+                    #name="ngModel" 
+                    (change)="LogChange(name)" 
+                    type="text" 
+                    class="form-control">
+            <div class="alert alert-danger" *ngIf="!name.valid">Name is Compulssory.</div>
+          </td>
+        </div>
+      </tr>
+
+      <tr>
+        <div class="form-group">
+          <td>
+            <label>Password :</label>
+          </td>
+          <td>
+            <input id="password" #password type="text" class="form-control">
+          </td>
+        </div>
+      </tr>
+
+    </table>
+
+    <button (click)="AcceptData(name.value,address.value,gender.value,mobno.value,emailid.value,batchname.value)">Submit data</button>
+  </form>
+</div>

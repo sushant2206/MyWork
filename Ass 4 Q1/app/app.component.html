@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+     Ass 4 Q.1
+  </h1>
+ </div>
+
+<div>
+  <app-sub-comp [parentData]="message" (MyEvent)="message1 = $event"></app-sub-comp>
+</div>
+<div>
+  <h2>{{message1}}</h2>
+</div> 
