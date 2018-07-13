@@ -1,0 +1,46 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  
+  
+      <div> 
+          <mat-form-field>
+              <mat-select placeholder="Select City" [(ngModel)]="selectedValue" name="city">
+                <mat-option *ngFor="let ct of city" [value]="ct.name">
+                  {{ct.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            
+            <h2> Selected City: {{selectedValue}} </h2>
+      </div> 
+      <div>
+          <mat-form-field>
+              <input matInput [matDatepicker]="picker" placeholder="Start date">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <br>
+
+            <mat-form-field>
+                <input matInput [matDatepicker]="pick" placeholder="End date">
+                <mat-datepicker-toggle matSuffix [for]="pick"></mat-datepicker-toggle>
+                <mat-datepicker #pick></mat-datepicker>
+              </mat-form-field>
+      </div>
+
+     
+  
+    
+
+    
+
+  
+
+ </div>
+
+

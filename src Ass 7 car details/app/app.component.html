@@ -1,0 +1,47 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Car Details 
+  </h1>
+
+  
+  
+    <div>
+      <form class="example-form">
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Enter car name" value="">
+          </mat-form-field> 
+
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Type of car" value="">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Color" value="" >
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+              <input required matInput placeholder="Car Number" value="" ngModel name="No" No="carNo" #No="ngModel">
+          </mat-form-field>
+          <div [ngStyle]="{'color': 'red'}" *ngIf="!No.valid">No is Compulssory.</div>
+
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="No of seats" value="">
+          </mat-form-field>
+
+          <button mat-flat-button>Submit</button>
+
+        </form>
+     </div>
+
+     
+  
+    
+
+    
+
+  
+
+ </div>
+
+
